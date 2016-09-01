@@ -7,7 +7,16 @@ int Sum(int z){
     {
       cout << "Sum of 1 to " << i << " is " << i*(i+1)/2 << endl;
     }
+  return i;
 }
+
+int Product(int y){
+  for(int n = 1; n <= y; n++){
+    cout << "product of 1 to " << n << " is " << n*n << endl;
+  }
+  return n;
+}
+
 int main(){
 
   int x;
@@ -16,6 +25,7 @@ int main(){
 
   cout << "What number do you want to pick to get the sum?";
   cin >> x;
-
+  sum(x);
+  product(x);
   return 0;
 }
